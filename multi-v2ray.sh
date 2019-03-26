@@ -154,8 +154,6 @@ checkSys() {
     fi
 }
 
-}
-
 #安装依赖
 installDependent(){
     if [[ ${OS} == 'CentOS' || ${OS} == 'Fedora' ]];then
