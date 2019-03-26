@@ -145,7 +145,7 @@ checkSys() {
     elif [[ $(cat /etc/issue | grep Ubuntu) ]];then
         OS='Ubuntu'
         PACKAGE_MANAGER='apt-get'
-    elif [[ $(cat /etc/issue | grep Raspbian) ]];then
+    elif [[ $(cat /etc/issue | grep -c Raspbian) ]];then
         OS='Raspbian'
         PACKAGE_MANAGER='apt-get'	
     else
