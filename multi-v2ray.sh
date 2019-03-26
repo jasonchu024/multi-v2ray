@@ -18,7 +18,7 @@ REMOVE=0
 
 CHINESE=0
 
-BASE_SOURCE_PATH="https://github.com/jasonchu024/multi-v2ray/tree/master"
+BASE_SOURCE_PATH="https://raw.githubusercontent.com/jasonchu024/multi-v2ray/master/"
 
 CLEAN_IPTABLES_SHELL="$BASE_SOURCE_PATH/v2ray_util/global_setting/clean_iptables.sh"
 
