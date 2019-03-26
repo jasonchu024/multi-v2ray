@@ -18,7 +18,7 @@ REMOVE=0
 
 CHINESE=0
 
-BASE_SOURCE_PATH="https://raw.githubusercontent.com/Jrohy/multi-v2ray/master"
+BASE_SOURCE_PATH="https://github.com/jasonchu024/multi-v2ray/tree/master"
 
 CLEAN_IPTABLES_SHELL="$BASE_SOURCE_PATH/v2ray_util/global_setting/clean_iptables.sh"
 
@@ -145,6 +145,9 @@ checkSys() {
     elif [[ $(cat /etc/issue | grep Ubuntu) ]];then
         OS='Ubuntu'
         PACKAGE_MANAGER='apt-get'
+    elif [[ $(cat /etc/issue | grep Raspbian) ]];then
+        OS='Raspbian'
+        PACKAGE_MANAGER='apt-get'	
     else
         colorEcho ${RED} "Not support OS, Please reinstall OS and retry!"
         exit 1
